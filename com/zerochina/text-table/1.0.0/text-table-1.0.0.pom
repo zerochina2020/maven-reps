@@ -97,10 +97,20 @@
     </build>
 
     <distributionManagement>
-        <repository>
+        <!--<repository>
             <id>github</id>
             <name>Github Repository</name>
             <url>file://${project.build.directory}/mvn-repo</url>
+        </repository>-->
+        <repository>
+            <id>nexus</id>
+            <name>Releases</name>
+            <url>https://nexus.huilianyi.com/repository/maven-releases</url>
         </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>Snapshot</name>
+            <url>https://nexus.huilianyi.com/repository/maven-snapshots</url>
+        </snapshotRepository>
     </distributionManagement>
 </project>
